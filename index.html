@@ -229,7 +229,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow+Condensed:wght@500;600;700;800;900&amp;display=swap" rel="stylesheet"/></head>
 <body>
   <script>
-const emojiPattern = /(🌞|🌮|💾|🛹|⚡|🌴|🐚|🦀|🚙|🚗|👽|📷|☝|💥|🏁)/gu;
+document.addEventListener('DOMContentLoaded', () => {
+    const emojiPattern = /(🌞|🌮|💾|🛹|⚡|🌴|🐚|🦀|🚙|🚗|👽|📷|☝|💥|🏁)/gu;
     const pixelEmojiCache = new Map();
     function pixelEmoji(symbol) {
       if (!pixelEmojiCache.has(symbol)) {
@@ -715,6 +716,7 @@ const emojiPattern = /(🌞|🌮|💾|🛹|⚡|🌴|🐚|🦀|🚙|🚗|👽|�
         alien.style.visibility = '';
       }, { once: true });
     });
+    }, { once: true });
 </script><div class="viewport" id="viewport">
     <main class="monitor" aria-label="Retro multimodal search performance report">
       <div class="screen" data-search-type="multimodal">
